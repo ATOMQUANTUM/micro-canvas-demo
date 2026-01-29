@@ -1,0 +1,43 @@
+name: Render Trailer
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: List files
+        run: ls -la
+
+      - name: Render vertical MP4 (1080x1920)
+        run: |
+          # create a slow zoom/pan and add grain + vignette using ffmpeg filters
+          ffmpeg -y -loop 1 -i 0a46a4b6-82b4-4e93-b2b0-c84fec1910a5.jpg -vf "scale=1080:-1, pad=1080:1920:(ow-iw)/2:(oh-ih)/2:black, zoompan=z='if(lte(on,1),1.0,zoom+0.0005)':d=300, eq=contrast=1.05:brightness=0.01:saturation=1.02, gblur=sigma=2, unsharp=5:5:0.8, format=yuv420p, drawbox=x=0:y=0:w=iw:h=120:color=#000000@0.0:t=fill" -t 8 -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p trailer_vertical.mp4
+
+      - name: Render square MP4 (1080x1080)
+        run: |
+          ffmpeg -y -loop 1 -i 0a46a4b6-82b4-4e93-b2b0-c84fec1910a5.jpg -vf "scale=1080:-1, crop=1080:1080:(iw-1080)/2:(ih-1080)/2, zoompan=z='if(lte(on,1),1.0,zoom+0.00045)':d=240, eq=contrast=1.05:brightness=0.01:saturation=1.02, gblur=sigma=1.2, unsharp=4:4:0.6, format=yuv420p" -t 8 -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p trailer_square.mp4
+
+      - name: Render GIF (looping 6s)
+        run: |
+          ffmpeg -y -i trailer_square.mp4 -vf "fps=15,scale=720:-1:flags=lanczos" -loop 0 trailer.gif
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: trailer-artifacts
+          path: |
+            trailer_vertical.mp4
+            trailer_square.mp4
+            trailer.gif
