@@ -1,0 +1,69 @@
+NFT Curators & Curated Platforms — Priority List (For Anton Kononov)
+
+Purpose
+- Quick, actionable list of top curated NFT platforms and where to contact their curatorial teams or submission pages. Use this when pitching curated drops of your artwork.
+
+Top curated platforms (priority order)
+
+1) SuperRare 🔥 (High)
+- Notes: Top curated Ethereum gallery focused on single-edition works and premium collectors.
+- Curator / submission: https://superrare.com/ (Contact via platform profile or official Discord)
+
+2) Foundation ⭐ (High)
+- Notes: Invite-first but open to strong artist pitches; good for collector exposure.
+- Submit / info: https://foundation.app/
+
+3) Async Art 🎛️ (High)
+- Notes: Focus on programmable, layered artworks — good fit for generative/interactive pieces.
+- Submit / info: https://async.art/
+
+4) Art Blocks / Curated 🧩 (High)
+- Notes: Premier generative platform (curated series requires application and strong technical provenance).
+- Curated info: https://artblocks.io/curated
+
+5) Nifty Gateway 💎 (High)
+- Notes: Curated drops, editorial support, mainstream collector reach; requires outreach via collectors/curators.
+- Info: https://niftygateway.com/
+
+6) KnownOrigin 🖼️ (Medium)
+- Notes: Curated digital art marketplace with artist application form.
+- Submit: https://knownorigin.io/
+
+7) MakersPlace ✍️ (Medium)
+- Notes: Curated marketplace emphasizing authentication & provenance.
+- Submit: https://makersplace.com/
+
+8) Zora / Zora Protocol (Open & Curated) ⚙️ (Medium)
+- Notes: Emerging platform for creator-owned marketplaces; good for editions and programmable rights.
+- Info: https://zora.co/
+
+9) Magic Eden (Solana) 🚀 (Medium)
+- Notes: Leading Solana marketplace; has curated drops and editorial partners.
+- Info: https://magiceden.io/
+
+10) Rarible / Rarible Creator (Open + Curated) 🔗 (Low)
+- Notes: Marketplace with some curation; better for broad distribution after curated drop.
+- Info: https://rarible.com/
+
+Pitching & Outreach Notes
+- Always lead with provenance & institutional work (Expo 2020, Victoria Falls, NEOM, Smithsonian) — this is your unique leverage.
+- Include: 1–2 hero images (1200×1200), a short artist statement (50–80 words), a 200–350 word project note, and links to high‑res masters on request.
+- Offer exclusive terms: single-edition, or small edition + IRL/performance pairing (projection, print, certificate).
+- Use Discord + Twitter/X to reach platform curators; email where a submissions page exists.
+
+Suggested quick email/template hook
+Hi [Curator Name],
+
+I’m Anton Kononov — Executive Art Director & Creative Technologist. I’d like to propose an exclusive drop for [Platform]. My work combines generative geometry with large-scale projection (recent projects include the Victoria Falls mist projection and creative direction at Expo 2020). I have a ready 1080×1080 looping preview and 4K master for an exclusive 1/1 or limited edition release.
+
+Link: [landing page preview]
+Short bio + press kit: [link]
+
+Would you be open to a quick call or preview of the pieces?
+
+Best,
+Anton
+
+—
+
+I’ll convert this to a clean PDF and triple-check links before sending. Any platforms you want added/removed before I make the PDF? If not, I’ll create the PDF now and upload it to Telegram.
